@@ -2,4 +2,4 @@
 
 . /etc/container_environment.sh
 
-exec mediatomb -p 8000 -a /srv/mediatomb
+exec /usr/bin/mediatomb -a /var/lib/mediatomb -p 49152 -m /var/lib/mediatomb -c /etc/mediatomb/config.xml -d -u mediatomb -g mediatomb -P /var/run/mediatomb.pid -l /var/log/mediatomb.log

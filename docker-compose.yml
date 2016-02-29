@@ -2,7 +2,7 @@ mediatomb:
   build: .
   net: host
   ports:
-    - 8000:8000
+    - 49152:49152
   volumes:
     - /var/lib/mediatomb
     - /srv/mythtv/videos:/var/lib/mediatomb/Video
