@@ -1,0 +1,9 @@
+mediatomb:
+  build: .
+  net: host
+  ports:
+    - 8000:8000
+  volumes:
+    - /var/lib/mediatomb
+    - /srv/mythtv/videos:/var/lib/mediatomb/Video
+    - /srv/mythtv/torrents/complete:/var/lib/mediatomb/New

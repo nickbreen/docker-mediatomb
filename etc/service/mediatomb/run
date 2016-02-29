@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /etc/container_environment.sh
+
+exec mediatomb -p 8000 -a /srv/mediatomb
